@@ -15,3 +15,4 @@ Melhorias
   - Adicionar hover aos botões
   - Transições em alguns componentes
     - Transição na listagem dos shoes ao clicar
+- Product detail section
