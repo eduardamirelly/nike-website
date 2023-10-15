@@ -1,9 +1,26 @@
 import PopularProductCard from '../components/PopularProductCard';
 import { products } from '../constants';
 
+import { motion } from "framer-motion"
+
 const PopularProducts = () => {
   return (
-    <section 
+    <motion.section
+      initial={{
+        opacity: 0,
+        y: 100,
+        scale: 0.8,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1,
+        delay: 0.5,
+      }}
+      viewport={{ once: true }}
       id="products" 
       className="max-container max-sm:mt-12"
     >
@@ -19,7 +36,7 @@ const PopularProducts = () => {
           <PopularProductCard key={product.name} {...product} />
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }
 

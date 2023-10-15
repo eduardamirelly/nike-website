@@ -2,9 +2,26 @@ import { copyrightSign } from "../assets/icons"
 import { footerLogo } from "../assets/images"
 import { footerLinks, socialMedia } from "../constants"
 
+import { motion } from "framer-motion"
+
 const Footer = () => {
   return (
-    <footer className="max-container">
+    <motion.footer
+      initial={{
+        opacity: 0,
+        scale: 0.8,
+      }}
+      whileInView={{
+        opacity: 1,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1,
+        delay: 0.5,
+      }}
+      viewport={{ once: true }}
+      className="max-container"
+    >
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
           <a href="/">
@@ -64,7 +81,7 @@ const Footer = () => {
         </div>
         <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
       </div>
-    </footer>
+    </motion.footer>
   )
 }
 

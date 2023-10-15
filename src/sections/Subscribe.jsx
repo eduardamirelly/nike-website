@@ -1,8 +1,25 @@
 import Button from "../components/Button"
 
+import { motion } from "framer-motion"
+
 const Subscribe = () => {
   return (
-    <section 
+    <motion.section
+      initial={{
+        opacity: 0,
+        y: 100,
+        scale: 0.8,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1,
+        delay: 0.5,
+      }}
+      viewport={{ once: true }}
       id="contact-us"
       className="max-container flex justify-between items-center max-lg:flex-col gap-10"
     >
@@ -26,7 +43,7 @@ const Subscribe = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

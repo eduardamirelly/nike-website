@@ -2,9 +2,28 @@ import { arrowRight } from "../assets/icons"
 import { offer } from "../assets/images"
 import Button from "../components/Button"
 
+import { motion } from "framer-motion"
+
 const SpecialOffer = () => {
   return (
-    <section className="max-container flex max-xl:flex-col-reverse gap-10 items-center justify-between w-full">
+    <motion.section
+      initial={{
+        opacity: 0,
+        y: 100,
+        scale: 0.8,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1,
+        delay: 0.5,
+      }}
+      viewport={{ once: true }}
+      className="max-container flex max-xl:flex-col-reverse gap-10 items-center justify-between w-full"
+    >
       <div className="flex-1">
         <img 
           src={offer} 
@@ -26,7 +45,19 @@ const SpecialOffer = () => {
         </p>
 
         <div className="mt-11 flex flex-wrap gap-4">
-          <Button label="Shop now" iconURL={arrowRight} />
+          <motion.div
+            animate={{
+              scale: [1, 1.1, 1],
+              transition: {
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            }}
+          >
+            <Button label="Shop now" iconURL={arrowRight} />
+          </motion.div>
+
           <Button 
             label="Learn more"
             backgroundColor="bg-white"
@@ -35,7 +66,7 @@ const SpecialOffer = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,9 +1,26 @@
 import { shoe8 } from '../assets/images';
 import Button from '../components/Button';
 
+import { motion } from "framer-motion"
+
 const SuperQuality = () => {
   return (
-    <section
+    <motion.section
+      initial={{
+        opacity: 0,
+        y: 100,
+        scale: 0.8,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1,
+        delay: 0.5,
+      }}
+      viewport={{ once: true }}
       id="about-us"
       className="flex max-lg:flex-col items-center gap-10 justify-between w-full max-container"
     >
@@ -21,7 +38,20 @@ const SuperQuality = () => {
           <Button label="View details" />
         </div>
       </div>
-      <div className="flex-1 flex justify-center items-center">
+      <motion.div 
+        animate={{
+          opacity: 1,
+          scale: 1,
+          y: [0, -20],
+        }}
+        transition={{
+          duration: 0.9,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        }}
+        className="flex-1 flex justify-center items-center"
+      >
         <img 
           src={shoe8} 
           alt="shoe collection" 
@@ -29,8 +59,8 @@ const SuperQuality = () => {
           height={522}
           className="object-contain"
         />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 

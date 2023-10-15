@@ -71,10 +71,21 @@ const Hero = () => {
           animate={animationStartFromLeft().animate}
           transition={animationStartFromLeft(2.5).transition}
         >
-          <Button 
-            label="Shop now" 
-            iconURL={arrowRight}
-          />
+          <motion.div
+            animate={{
+              scale: [1, 1.1, 1],
+              transition: {
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            }}
+          >
+            <Button 
+              label="Shop now" 
+              iconURL={arrowRight}
+            />
+          </motion.div>
         </motion.div>
 
         <motion.div
@@ -122,7 +133,7 @@ const Hero = () => {
             repeatType: "reverse",
             ease: "easeInOut",
           }}
-          >
+        >
           <img
             src={bigShoeImg} 
             alt="shoe collection"
