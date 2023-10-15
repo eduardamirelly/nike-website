@@ -1,18 +1,55 @@
-# React + Vite
+# Nike Website (Landing Page)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![cover](.github/cover.png?style=flat)
 
-Currently, two official plugins are available:
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=FF6452&labelColor=ffffff">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/eduardamirelly/to-do-list?color=FF6452&labelColor=ffffff">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eduardamirelly/to-do-list?color=FF6452&labelColor=ffffff">
+  <img alt="Personal Project Tag" src="https://img.shields.io/static/v1?label=personal project&message=:)&color=FF6452&labelColor=ffffff">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <a href="https://eduardamirelly.github.io/nike-website/">View Site</a>
+  ·
+  <a href="https://github.com/eduardamirelly/nike-website/issues/new/choose">Report Bug</a>
+  ·
+  <a href="https://github.com/eduardamirelly/nike-website/issues/new/choose">Suggestions</a>
+</p>
 
+## 💻 Project Web
 
-Melhorias
-- Adicionar animações
-  - Scroll smooth
-  - Exibir a seção com uma animação de entrada
-  - Adicionar hover aos botões
-  - Transições em alguns componentes
-    - Transição na listagem dos shoes ao clicar
-- Product detail section
+A simple landing page with animations.
+
+## ✨ Technologies
+
+-   [ ] Vite
+-   [ ] React
+-   [ ] TailwindCSS
+-   [ ] Framer Motion
+
+## 🚀 Deploy
+
+-   [ ] Github Pages
+
+## 🔖 Layout
+
+You can view the project layout through [this link](https://www.figma.com/community/file/1138475967954448460).
+
+## 🏁 Running the project
+
+### First Step [Install dependencies]
+
+```cl
+npm install
+```
+
+### Second Step [Run]
+
+```cl
+npm run dev
+```
+
+## 📄 License
+
+This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
