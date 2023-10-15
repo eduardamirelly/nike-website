@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <section 
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+      className="w-full flex xl:flex-row flex-col justify-center gap-10 max-container"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
         <motion.p 
@@ -121,7 +121,7 @@ const Hero = () => {
           duration: 3,
           delay: 2,
         }}
-        className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
+        className="relative flex-1 flex justify-center items-center max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
       >
         <motion.div
           animate={{
