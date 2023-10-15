@@ -34,7 +34,7 @@ const Hero = () => {
         <motion.p 
           initial={animationStartFromLeft().initial}
           animate={animationStartFromLeft().animate}
-          transition={animationStartFromLeft(1).transition}
+          transition={animationStartFromLeft(0.5).transition}
           className="text-xl font-montserrat text-coral-red"
         >
           Our Summer Collection
@@ -42,13 +42,15 @@ const Hero = () => {
         <motion.h1 
           initial={{
             opacity: 0,
+            scale: 0.8,
           }}
           animate={{
             opacity: 1,
+            scale: 1,
           }}
           transition={{
             duration: 1,
-            delay: 2,
+            delay: 1,
           }}
           className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold"
         >
@@ -60,7 +62,7 @@ const Hero = () => {
         <motion.p
           initial={animationStartFromLeft().initial}
           animate={animationStartFromLeft().animate}
-          transition={animationStartFromLeft(2.5).transition}
+          transition={animationStartFromLeft(1.5).transition}
           className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm"
         >
           Discover stylish Nike arrivals, quality comfort, and innovation for your active life.
@@ -69,7 +71,7 @@ const Hero = () => {
         <motion.div
           initial={animationStartFromLeft().initial}
           animate={animationStartFromLeft().animate}
-          transition={animationStartFromLeft(2.5).transition}
+          transition={animationStartFromLeft(1.5).transition}
         >
           <motion.div
             animate={{
@@ -91,7 +93,7 @@ const Hero = () => {
         <motion.div
           initial={animationStartFromLeft().initial}
           animate={animationStartFromLeft().animate}
-          transition={animationStartFromLeft(2.5).transition}
+          transition={animationStartFromLeft(1.5).transition}
         >
           <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
             {statistics.map((stac) => (
@@ -117,7 +119,7 @@ const Hero = () => {
         }}
         transition={{
           duration: 3,
-          delay: 3,
+          delay: 2,
         }}
         className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
       >
