@@ -47,7 +47,7 @@ const Nav = () => {
               key={item.label}
             >
               <li>
-                <a href={item.href} className="font-montserrat leading-normal text-lg text-slate-gray">
+                <a href={item.href} className="font-montserrat leading-normal text-lg text-slate-gray hover:font-semibold transition-all">
                   {item.label}
                 </a>
               </li>

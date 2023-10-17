@@ -5,17 +5,18 @@ const Button = ({
   borderColor,
   textColor,
   fullWidth,
+  hoverBgColor,
 }) => {
   return (
     <button 
       className={
-        `flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full 
+        `flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full transition-all 
         ${
           backgroundColor
-          ? `${backgroundColor} ${borderColor} ${textColor}`
-          : 'bg-coral-red border-coral-red text-white'
+          ? `${backgroundColor} ${borderColor} ${textColor} ${hoverBgColor}`
+          : 'bg-coral-red border-coral-red text-white hover:bg-red-500'
         } 
-        ${fullWidth && 'w-full'}
+        ${fullWidth ? 'w-full' : ''}
         `
       }
     >
