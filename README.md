@@ -53,3 +53,7 @@ npm run dev
 ## 📄 License
 
 This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
+
+## Reference Source
+
+[Javascript Mastery](https://www.youtube.com/@javascriptmastery/videos)
