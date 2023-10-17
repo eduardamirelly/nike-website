@@ -8,6 +8,12 @@ import { useState } from 'react';
 const Nav = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
+  window.addEventListener("resize", function() {
+    if (this.window.innerWidth > 1024) {
+      setIsCollapsed(false);
+    }
+  })
+
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
@@ -74,6 +80,13 @@ const Nav = () => {
         )}
         <div className="hidden max-lg:block cursor-pointer" onClick={() => setIsCollapsed(!isCollapsed)}>
           {isCollapsed ? (
+            <img 
+              src={hamburger} 
+              alt="Hamburger"
+              width={25}
+              height={25}
+            />
+          ) : (
             <motion.div
               initial={{
                 opacity: 0,
@@ -88,19 +101,12 @@ const Nav = () => {
               }}
             >
               <img 
-                src={hamburger} 
-                alt="Hamburger"
+                src={xIcon} 
+                alt="x icon"
                 width={25}
                 height={25}
               />
             </motion.div>
-          ) : (
-            <img 
-              src={xIcon} 
-              alt="x icon"
-              width={25}
-              height={25}
-            />
           )}
         </div>
       </nav>
