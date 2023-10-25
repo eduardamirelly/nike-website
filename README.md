@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=FF6452&labelColor=ffffff">
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/eduardamirelly/to-do-list?color=FF6452&labelColor=ffffff">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eduardamirelly/to-do-list?color=FF6452&labelColor=ffffff">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/eduardamirelly/nike-website?color=FF6452&labelColor=ffffff">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eduardamirelly/nike-website?color=FF6452&labelColor=ffffff">
   <img alt="Personal Project Tag" src="https://img.shields.io/static/v1?label=personal project&message=:)&color=FF6452&labelColor=ffffff">
 </p>
 
